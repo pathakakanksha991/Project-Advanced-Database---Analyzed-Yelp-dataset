@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Yelp - Data Set | Group 3-2</title>
+	<script  src="https://code.jquery.com/jquery-3.4.1.min.js" 
+					integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="javascript/main.js"></script>
+	<style type='text/css'>
+    	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+		}
+   </style>
+</head>
+<body>
+<h1>
+</h1>
+	<div style=" border: 1px solid; width: 50%;">
+		<img src="https://dlpcapitalpartners.com/wp-content/uploads/2019/01/yelp-logo.png" width=20%/>
+		<div id="initDiv" style="display:block;">
+			<div>Start the application</div>
+			<button onclick="initialize()">Initialize</button>
+		</div>
+		<div id="mainDiv" style="display:none;">
+			<div>
+				<div><strong>Q1. Highest rated new businesses (By category)</strong></div>
+				<button onclick="getData1()">Find</button>&nbsp;<span>Category: </span><select id="category"></select>
+			</div><br>
+			<div>
+				<div><strong>Q2. Top 10 Reviewers (By region for selected year)</strong></div>
+				<button onclick="getData2()">Find</button>&nbsp;<span>State: </span><select id="state"></select>&nbsp;<span>Year: </span><select id="year"></select>
+			</div><br>
+			<div>
+				<div><strong>Q3. Businesses by categories (By city)</strong></div>
+				<button onclick="getData3()">Find</button>&nbsp;<span>City: </span><select id="city"></select>
+			</div>
+			<br>
+			<br>
+	
+			<div style="border: 1px solid;"><span><strong>Output 1 (New business name and its city):</strong></span><div id="output1" ></div></div>
+			<br>
+			<div style="border: 1px solid;"><span><strong>Output 2 (Top reviewers and their review count):</strong></span><span></span><div id="output2"></div></div>
+			<br>
+			<div style="border: 1px solid;"><span><strong>Output 3 (Business categories and their count):</strong></span><span></span><div id="output3"></div></div>
+		</div>
+	</div>
+</body>
+</html>
